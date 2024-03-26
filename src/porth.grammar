@@ -1,4 +1,4 @@
-@top File { (Identifier | Number | String)+ }
+@top File { (Identifier | Number | String | Intrinsics | Keywords | Control | Paranteces)+ }
 
 @skip { space }
 
