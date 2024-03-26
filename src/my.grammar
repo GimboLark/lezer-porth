@@ -1,0 +1,14 @@
+@top File { (Number | String | Intrinsics | Keywords | Control)+ }
+
+@skip { space }
+
+@tokens {
+  space { @whitespace+ }
+  Number { $[0-9]+ }
+  String { '"' !["]* '"' }
+  Intrinsics { '+' | '-' | '*' | '<' | '>' | '<=' | '>=' | '!=' | '=' | 'print' | 'drop' }
+  Keywords { 'dup' | 'over'| 'proc' | 'main' | 'in' }
+  Control { 'while' | 'let' | 'do' | 'end' }
+}
+
+@external propSource highlighting from "./highlight.js"

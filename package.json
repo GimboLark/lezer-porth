@@ -1,14 +1,23 @@
 {
-  "name": "my-parser-name",
-  "version": "0.1.0",
+  "name": "lezer-porth",
+  "version": "0.1.1",
+  "author": "Barış Işık",
+  "license": "MIT",
+  "homepage": "https://github.com/GimboLark/lezer-porth",
   "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "devDependencies": {
-    "@lezer/generator": "^1.7.0"
+    "@lezer/generator": "^1.0.0",
+    "rollup": "^3.0.0"
   },
   "dependencies": {
+    "@lezer/highlight": "^1.0.0",
     "@lezer/lr": "^1.0.0"
   },
   "scripts": {
-    "prepare": "lezer-generator src/my.grammar -o src/parser.js"
+    "prepare": "rollup -c"
   }
 }
