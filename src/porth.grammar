@@ -7,7 +7,7 @@
   Number { $[0-9]+ }
   String { '"' !["]* '"' }
   Intrinsics { '+' | '-' | '*' | '<' | '>' | '<=' | '>=' | '!=' | '=' | 'print' | 'drop' }
-  Keywords { 'dup' | 'over'| 'proc' | 'main' | 'in' }
+  Keywords { 'dup' | 'over'| 'proc' | 'main' | 'in' | 'include' }
   Control { 'while' | 'let' | 'do' | 'end' }
 }
 

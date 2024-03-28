@@ -1,7 +1,7 @@
 import { lezer } from "@lezer/generator/rollup"
 
 export default {
-  input: "./src/my.grammar",
+  input: "./src/porth.grammar",
   output: [{
     format: "es",
     file: "./dist/index.js"
