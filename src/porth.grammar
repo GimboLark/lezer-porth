@@ -6,9 +6,9 @@
   space { @whitespace+ }
   Number { $[0-9]+ }
   String { '"' !["]* '"' }
-  Intrinsics { '+' | '-' | '*' | '<' | '>' | '<=' | '>=' | '!=' | '=' | 'print' | 'drop' | 'puts' }
+  Intrinsics { '+' | '-' | '*' | '<' | '>' | '<=' | '>=' | '!=' | '=' | 'print' | 'drop' | 'puts' | 'mod'}
   Keywords { 'dup' | 'over'| 'proc' | 'main' | 'in' | 'include' | 'const' }
-  Control { 'while' | 'let' | 'do' | 'end' }
+  Control { 'while' | 'let' | 'do' | 'end' | 'else' | 'if' }
 }
 
 @external propSource highlighting from "./highlight.js"
