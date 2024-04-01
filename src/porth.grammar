@@ -6,7 +6,7 @@
   space { @whitespace+ }
   Number { $[0-9]+ }
   String { '"' !["]* '"' }
-  Intrinsics { '+' | '-' | '*' | '<' | '>' | '<=' | '>=' | '!=' | '=' | 'print' | 'drop' | 'puts' | 'mod'}
+  Intrinsics { '+' | '-' | '*' | '<' | '>' | '<=' | '>=' | '!=' | '=' | 'print' | 'drop' | 'puts' | 'mod' | '%' }
   Keywords { 'dup' | 'over'| 'proc' | 'main' | 'in' | 'include' | 'const' }
   Control { 'while' | 'let' | 'do' | 'end' | 'else' | 'if' }
 }
